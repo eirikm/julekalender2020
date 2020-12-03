@@ -17,16 +17,16 @@ function App() {
           <tr>
             <td>(bilde)</td>
             <td>tutorial</td>
-            <td>-1,2</td>
-            <td>0:48</td>
+            <td style={{ color: "blue" }}>-1,2</td>
+            <td align="right">0:48</td>
           </tr>
           <tr>
             <td>(bilde)</td>
             <td>konge</td>
-            <td>-7,5</td>
+            <td style={{ color: "pink" }}>-7,5</td>
             <td>5:55</td>
           </tr>
-          <tr>
+          <tr style={{ backgroundColor: "grey" }}>
             <td>(bilde)</td>
             <td>afrika</td>
             <td>(gjenstående tid til skjema tid)</td>
@@ -40,18 +40,22 @@ function App() {
           </tr>
           <tr>
             <td colSpan={4} align="right">
-              25:10
+              <span style={{ color: "#f0f", fontSize: "500%" }}>25:10</span>
             </td>
           </tr>
           <tr>
             <td colSpan={4} align="left">
-              total time save: 0:06
+              <span style={{ fontSize: "50%", color: 'green' }}>
+                total time save: 0:06
+              </span>
             </td>
           </tr>
 
           <tr>
             <td colSpan={4}>
-              <button>start / stopp</button>
+              <button style={{ width: "100%" }}>
+                <span style={{fontSize: '200%'}}>start / stopp</span>
+              </button>
             </td>
           </tr>
         </table>
