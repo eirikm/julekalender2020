@@ -16,8 +16,9 @@ function App() {
 
           <tr className="oddetall">
             <td>
-              <img src="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
+              <img
                 className="icon"
+                src="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
               />
             </td>
             <td align="left">tutorial</td>
@@ -26,30 +27,33 @@ function App() {
           </tr>
           <tr className="partall">
             <td>
-            <img src="https://cdn.staticneo.com/w/littlebigplanet/King.png"
+              <img
+                src="https://cdn.staticneo.com/w/littlebigplanet/King.png"
                 className="icon"
               />
-              </td>
+            </td>
             <td align="left">konge</td>
             <td className="plusstid">+17,5</td>
             <td align="right">5:55</td>
           </tr>
           <tr className="nå">
             <td>
-            <img src="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
+              <img
                 className="icon"
+                src="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
               />
-              </td>
+            </td>
             <td align="left">afrika</td>
             <td>(gjenstående tid til skjema tid)</td>
             <td align="right">29:13</td>
           </tr>
           <tr className="partall">
             <td>
-            <img src="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
+              <img
                 className="icon"
+                src="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
               />
-              </td>
+            </td>
             <td align="left">bruden</td>
             <td></td>
             <td align="right">33:10</td>
@@ -61,9 +65,7 @@ function App() {
           </tr>
           <tr>
             <td colSpan={4} align="left">
-              <span className="litentekst minustid" >
-                total time save: 0:06
-              </span>
+              <span className="litentekst minustid">total time save: 0:06</span>
             </td>
           </tr>
           <tr>
@@ -77,7 +79,7 @@ function App() {
           <tr>
             <td colSpan={4}>
               <button style={{ width: "100%" }}>
-                <span style={{fontSize: '200%'}}>start / stopp</span>
+                <span style={{ fontSize: "200%" }}>start / stopp</span>
               </button>
             </td>
           </tr>

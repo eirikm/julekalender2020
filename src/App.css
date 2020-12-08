@@ -13,29 +13,29 @@
   color: white;
 }
 
-.oddetall{
-  background-color:#000 ;
+.oddetall {
+  background-color: #000;
 }
 
-.partall{
-  background-color:#222 ;
+.partall {
+  background-color: #222;
 }
 
-.nå{
-  background-color:#008 ;
+.nå {
+  background-color: #008;
 }
 
-.minustid{
-  color: #0f0 ;
+.minustid {
+  color: #0f0;
 }
 
-.plusstid{
-  color: #f00 ;
+.plusstid {
+  color: #f00;
 }
 
-img.icon{
-  width:60px ;
-  height:60px ;
+img.icon {
+  width: 60px;
+  height: 60px;
 }
 
 .litentekst {
@@ -43,5 +43,5 @@ img.icon{
 }
 
 .klokke {
-  font-size: 500% ;
+  font-size: 500%;
 }
