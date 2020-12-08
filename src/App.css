@@ -12,3 +12,36 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.oddetall{
+  background-color:#000 ;
+}
+
+.partall{
+  background-color:#222 ;
+}
+
+.nå{
+  background-color:#008 ;
+}
+
+.minustid{
+  color: #0f0 ;
+}
+
+.plusstid{
+  color: #f00 ;
+}
+
+img.icon{
+  width:60px ;
+  height:60px ;
+}
+
+.litentekst {
+  font-size: 70%;
+}
+
+.klokke {
+  font-size: 500% ;
+}
