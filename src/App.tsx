@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { convertCompilerOptionsFromJson } from "typescript";
 
 function App() {
+  const [harStartet, setHarStartet] = useState<boolean>(false)
+  const [timer, settimer] = useState<number>(50)
+
+
+  const nullstill = () => {
+     console.log("nullstill")
+     settimer (0)      
+    }
+
+  const startstopp = () => {
+    if (harStartet) {
+      console.log("stopp");
+     
+    }
+    else{
+      console.log("start")
+      
+    }
+    setHarStartet(!harStartet)
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -60,7 +81,9 @@ function App() {
           </tr>
           <tr>
             <td colSpan={4} align="right">
-              <span className="klokke plusstid">25:10</span>
+              <span className="klokke plusstid">
+                {timer}
+              </span>
             </td>
           </tr>
           <tr>
@@ -78,9 +101,26 @@ function App() {
 
           <tr>
             <td colSpan={4}>
-              <button style={{ width: "100%" }}>
-                <span style={{ fontSize: "200%" }}>start / stopp</span>
+              <button style={{ width: "100%" }}
+                onClick={startstopp}
+              >
+                <span style={{ fontSize: "200%" }}>
+                  { harStartet ? "stopp" : "start"}
+                </span>
               </button>
+              
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4}>
+              <button style={{ width: "100%" }} disabled={harStartet}
+              onClick={nullstill}
+              >
+                <span style={{ fontSize: "200%" }}>
+                 nullstill
+                </span>
+              </button>
+              
             </td>
           </tr>
         </table>
