@@ -1,29 +1,24 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { convertCompilerOptionsFromJson } from "typescript";
 
-function App() {
-  const [harStartet, setHarStartet] = useState<boolean>(false)
-  const [timer, settimer] = useState<number>(50)
-
+const App = () => {
+  const [harStartet, setHarStartet] = useState<boolean>(false);
+  const [timer, settimer] = useState<number>(50);
 
   const nullstill = () => {
-     console.log("nullstill")
-     settimer (0)      
-    }
+    console.log("nullstill");
+    settimer(0);
+  };
 
   const startstopp = () => {
     if (harStartet) {
       console.log("stopp");
-     
+    } else {
+      console.log("start");
     }
-    else{
-      console.log("start")
-      
-    }
-    setHarStartet(!harStartet)
-  }
+    setHarStartet(!harStartet);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -38,6 +33,7 @@ function App() {
           <tr className="oddetall">
             <td>
               <img
+                alt="popit"
                 className="icon"
                 src="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
               />
@@ -49,6 +45,7 @@ function App() {
           <tr className="partall">
             <td>
               <img
+                alt="King"
                 src="https://cdn.staticneo.com/w/littlebigplanet/King.png"
                 className="icon"
               />
@@ -60,6 +57,7 @@ function App() {
           <tr className="nå">
             <td>
               <img
+                alt="Zola"
                 className="icon"
                 src="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
               />
@@ -71,6 +69,7 @@ function App() {
           <tr className="partall">
             <td>
               <img
+                alt="Bride"
                 className="icon"
                 src="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
               />
@@ -81,9 +80,7 @@ function App() {
           </tr>
           <tr>
             <td colSpan={4} align="right">
-              <span className="klokke plusstid">
-                {timer}
-              </span>
+              <span className="klokke plusstid">{timer}</span>
             </td>
           </tr>
           <tr>
@@ -101,32 +98,28 @@ function App() {
 
           <tr>
             <td colSpan={4}>
-              <button style={{ width: "100%" }}
-                onClick={startstopp}
-              >
+              <button style={{ width: "100%" }} onClick={startstopp}>
                 <span style={{ fontSize: "200%" }}>
-                  { harStartet ? "stopp" : "start"}
+                  {harStartet ? "stopp" : "start"}
                 </span>
               </button>
-              
             </td>
           </tr>
           <tr>
             <td colSpan={4}>
-              <button style={{ width: "100%" }} disabled={harStartet}
-              onClick={nullstill}
+              <button
+                style={{ width: "100%" }}
+                disabled={harStartet}
+                onClick={nullstill}
               >
-                <span style={{ fontSize: "200%" }}>
-                 nullstill
-                </span>
+                <span style={{ fontSize: "200%" }}>nullstill</span>
               </button>
-              
             </td>
           </tr>
         </table>
       </header>
     </div>
   );
-}
+};
 
 export default App;
