@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import { Overskrift } from "./Overskrift";
+import { Skjemalinje } from "./Skjemalinje";
 
 const App = () => {
   const [harStartet, setHarStartet] = useState<boolean>(false);
@@ -23,61 +25,34 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <table>
-          <tr>
-            <td colSpan={4}>Little Big Planet</td>
-          </tr>
-          <tr>
-            <td colSpan={4}>Any% no overlord</td>
-          </tr>
+          <Overskrift/>
 
-          <tr className="oddetall">
-            <td>
-              <img
-                alt="popit"
-                className="icon"
-                src="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
-              />
-            </td>
-            <td align="left">tutorial</td>
-            <td className="minustid">-1,2</td>
-            <td align="right">0:48</td>
-          </tr>
-          <tr className="partall">
-            <td>
-              <img
-                alt="King"
-                src="https://cdn.staticneo.com/w/littlebigplanet/King.png"
-                className="icon"
-              />
-            </td>
-            <td align="left">konge</td>
-            <td className="plusstid">+17,5</td>
-            <td align="right">5:55</td>
-          </tr>
-          <tr className="nå">
-            <td>
-              <img
-                alt="Zola"
-                className="icon"
-                src="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
-              />
-            </td>
-            <td align="left">afrika</td>
-            <td>(gjenstående tid til skjema tid)</td>
-            <td align="right">29:13</td>
-          </tr>
-          <tr className="partall">
-            <td>
-              <img
-                alt="Bride"
-                className="icon"
-                src="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
-              />
-            </td>
-            <td align="left">bruden</td>
-            <td></td>
-            <td align="right">33:10</td>
-          </tr>
+          <Skjemalinje
+          bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
+          beskrivelse="tutorial"
+          tidSpart="-1.2"
+          skjematid="0:48"
+          />
+          <Skjemalinje
+          bildeUrl="https://cdn.staticneo.com/w/littlebigplanet/King.png"
+          beskrivelse="konge"
+          tidSpart="+17.5"
+          skjematid="5:55"
+          />
+          <Skjemalinje
+          bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
+          beskrivelse="afrika"
+          tidSpart="(gjenstående tid til skjema)"
+          skjematid="29:13"
+          />
+          <Skjemalinje
+          bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
+          beskrivelse="bruden"
+          tidSpart=""
+          skjematid="33:10"
+          />
+          
+          
           <tr>
             <td colSpan={4} align="right">
               <span className="klokke plusstid">{timer}</span>
