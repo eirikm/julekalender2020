@@ -25,34 +25,33 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <table>
-          <Overskrift/>
+          <Overskrift />
 
           <Skjemalinje
-          bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
-          beskrivelse="tutorial"
-          tidSpart="-1.2"
-          skjematid="0:48"
+            bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/a/aa/Popit_lbp_2.jpg"
+            beskrivelse="tutorial"
+            tidSpart="-1.2"
+            skjematid="0:48"
           />
           <Skjemalinje
-          bildeUrl="https://cdn.staticneo.com/w/littlebigplanet/King.png"
-          beskrivelse="konge"
-          tidSpart="+17.5"
-          skjematid="5:55"
+            bildeUrl="https://cdn.staticneo.com/w/littlebigplanet/King.png"
+            beskrivelse="konge"
+            tidSpart="+17.5"
+            skjematid="5:55"
           />
           <Skjemalinje
-          bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
-          beskrivelse="afrika"
-          tidSpart="(gjenstående tid til skjema)"
-          skjematid="29:13"
+            bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/d/d4/Zola.png"
+            beskrivelse="afrika"
+            tidSpart="(gjenstående tid til skjema)"
+            skjematid="29:13"
           />
           <Skjemalinje
-          bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
-          beskrivelse="bruden"
-          tidSpart=""
-          skjematid="33:10"
+            bildeUrl="https://static.wikia.nocookie.net/littlebigplanet/images/9/94/Frida.jpg"
+            beskrivelse="bruden"
+            tidSpart=""
+            skjematid="33:10"
           />
-          
-          
+
           <tr>
             <td colSpan={4} align="right">
               <span className="klokke plusstid">{timer}</span>

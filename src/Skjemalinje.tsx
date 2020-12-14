@@ -10,21 +10,18 @@ type Props = {
 };
 
 export const Skjemalinje = (props: Props) => {
-const tidSpartclass =
-props.tidSpart.startsWith("+") ? "plusstid" : "minustid"
+  const tidSpartclass = props.tidSpart.startsWith("+")
+    ? "plusstid"
+    : "minustid";
 
-return(
-  <tr className="oddetall">
-  <td>
-    <img
-      alt="popit"
-      className="icon"
-      src={props.bildeUrl}
-    />
-  </td>
-<td align="left">{props.beskrivelse}</td>
-<td className={tidSpartclass}>{props.tidSpart}</td>
-<td align="right">{props.skjematid}</td>
-</tr>
-);
+  return (
+    <tr className="oddetall">
+      <td>
+        <img alt="popit" className="icon" src={props.bildeUrl} />
+      </td>
+      <td align="left">{props.beskrivelse}</td>
+      <td className={tidSpartclass}>{props.tidSpart}</td>
+      <td align="right">{props.skjematid}</td>
+    </tr>
+  );
 };
