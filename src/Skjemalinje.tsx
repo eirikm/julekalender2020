@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { Tracing } from "trace_events";
-import { isPropertySignature } from "typescript";
+import React from "react";
 
 type Props = {
   bildeUrl: string;
@@ -17,7 +15,7 @@ export const Skjemalinje = (props: Props) => {
   return (
     <tr className="oddetall">
       <td>
-        <img alt="popit" className="icon" src={props.bildeUrl} />
+        <img alt="" className="icon" src={props.bildeUrl} />
       </td>
       <td align="left">{props.beskrivelse}</td>
       <td className={tidSpartclass}>{props.tidSpart}</td>
