@@ -55,7 +55,7 @@ const App = () => {
 
           <tr>
             <td colSpan={4} align="right">
-              <Klokke sekunder={sekunder}/>
+              <Klokke sekunder={sekunder} />
             </td>
           </tr>
           <tr>
