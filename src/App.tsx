@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./App.css";
+import { Klokke } from "./Klokke";
 import { Overskrift } from "./Overskrift";
 import { Skjemalinje } from "./Skjemalinje";
 
 const App = () => {
   const [harStartet, setHarStartet] = useState<boolean>(false);
-  const [timer, settimer] = useState<number>(50);
+  const [sekunder, setSekunder] = useState<number>(2345);
 
   const nullstill = () => {
     console.log("nullstill");
-    settimer(0);
+    setSekunder(0);
   };
 
   const startstopp = () => {
@@ -54,7 +55,7 @@ const App = () => {
 
           <tr>
             <td colSpan={4} align="right">
-              <span className="klokke plusstid">{timer}</span>
+              <Klokke sekunder={sekunder}/>
             </td>
           </tr>
           <tr>
